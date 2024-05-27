@@ -1,12 +1,12 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-export default function MainLayout() {
+export default function MainLayout(props) {
   return (
     <>
       <Navbar />
 
-      <main>{preprocessCSS.children}</main>
+      <main>{props.children}</main>
 
       <Footer />
     </>

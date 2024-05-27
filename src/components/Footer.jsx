@@ -1,7 +1,11 @@
 export default function Footer() {
   return (
     <>
-      <h1>Footer</h1>
+      <div className="container">
+        <div className="col-12">
+          <p>© 2024. Created by Jabir.</p>
+        </div>
+      </div>
     </>
   );
 }
