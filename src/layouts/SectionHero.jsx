@@ -21,11 +21,11 @@ export default function SectionHero() {
                 Anwar Sarang dan MTS Sains Al Anwar 4.
               </p>
               <button type="button" className="btn btn-light btn-mb">
-                Pendaftaran
+                PENDAFTARAN
               </button>
 
               <button type="button" className="btn btn-outline-warning  btn-mb">
-                Profil
+                PROFIL
               </button>
             </div>
             <div className="col-6">
