@@ -3,6 +3,7 @@ import SectionHero from "../layouts/SectionHero";
 import SectionSambutan from "../layouts/SectionSambutan";
 import SectionProgram from "../layouts/SectionProgram";
 import SectionQuote from "../layouts/SectionQuote";
+import SectionKegiatan from "../layouts/SectionKegiatan";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <SectionSambutan />
         <SectionProgram />
         <SectionQuote />
+        <SectionKegiatan />
       </MainLayout>
     </>
   );
