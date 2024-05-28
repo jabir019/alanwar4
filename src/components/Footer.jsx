@@ -42,6 +42,10 @@ export default function Footer() {
         </div>
         <div className="bg overlay-bg"></div>
         <img src={anakhormat} className="bg img-bg " alt="anakhormat" />
+
+        <div className="container bg-primary text-center m-0 ">
+          <p className="text-white">Copyright ©️ 2024 by Jabir</p>
+        </div>
       </section>
     </>
   );

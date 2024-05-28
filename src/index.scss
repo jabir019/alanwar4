@@ -1,3 +1,6 @@
+@import "./style/bootstrap.scss";
+
+
 .section-hero {
     height: 90vh;
     position: relative;
@@ -20,4 +23,9 @@
 .overlay-bg{
     background-color: blue;
     opacity: .5;
+}
+
+.section-profil {
+    height: 30vh;
+    position: relative;
 }

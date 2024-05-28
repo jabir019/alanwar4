@@ -6,6 +6,7 @@ import Galeri from "./pages/Galeri";
 import Profil from "./pages/Profil";
 import Program from "./pages/Program";
 import Kontak from "./pages/Kontak";
+import Pendaftaran from "./pages/Pendaftaran";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/profil" element={<Profil />} />
           <Route path="/program" element={<Program />} />
           <Route path="/kontak" element={<Kontak />} />
+          <Route path="/pendaftaran" element={<Pendaftaran />} />
         </Routes>
       </BrowserRouter>
     </>

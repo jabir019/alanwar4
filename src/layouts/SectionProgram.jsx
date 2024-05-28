@@ -1,4 +1,5 @@
 import kegiatan from "../assets/Mask group.png";
+import CardProgram from "../components/CardProgram";
 
 export default function SectionProgram() {
   return (
@@ -15,7 +16,7 @@ export default function SectionProgram() {
               Incidunt, saepe?
             </p>
             <div>
-              <img className="w-100" src={kegiatan} alt="kegiatan" />
+              <img className="w-100 mb-3" src={kegiatan} alt="kegiatan" />
             </div>
           </div>
 

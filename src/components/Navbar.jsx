@@ -20,29 +20,29 @@ export default function Navbar() {
             <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto gap-3">
+            <ul className="navbar-nav ms-auto gap-3 ">
               <li className="nav-item">
-                <NavLink to="/" className="nav-link">
+                <NavLink to="/" className="nav-link text-white">
                   HOME
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/profil" className="nav-link">
+                <NavLink to="/profil" className="nav-link text-white">
                   PROFIL
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/about" className="nav-link">
+                <NavLink to="/program" className="nav-link text-white">
                   PROGRAM
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/contact" className="nav-link">
+                <NavLink to="/galeri" className="nav-link text-white ">
                   GALERI
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/" className="nav-link">
+                <NavLink to="/kontak" className="nav-link text-white">
                   KONTAK
                 </NavLink>
               </li>

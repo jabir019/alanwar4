@@ -6,18 +6,17 @@ export default function Profil() {
   return (
     <>
       <MainLayout>
-        <section className="section-hero">
+        <section className="section-profil">
           <div className="container">
-            <div className="row align-items-center justify-content-center ">
-              <h1>PROFIL</h1>
-            </div>
+            {/* bacground & overlay */}
+            <div className="bg overlay-bg"></div>
+            <img src={Profil1} className="bg img-bg" alt="profil1" />
 
-            <div className=" bg overlay-bg"></div>
-            <img
-              src={Profil1}
-              className="bg img-bg object-fit-cover"
-              alt="profil1"
-            />
+            <div className="row h-100 align-items-center justify-item-center ">
+              <div className="col-md-6 col-12 text-white align-self-center mt-5 ">
+                <h1>Profil</h1>
+              </div>
+            </div>
           </div>
         </section>
         <SectionProfil />

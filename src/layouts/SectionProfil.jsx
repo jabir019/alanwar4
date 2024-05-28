@@ -3,9 +3,9 @@ import Profil2 from "../assets/profil2.png";
 export default function SectionProfil() {
   return (
     <>
-      <section className="container py-5">
-        <div className="row py-5 justify-content-center ">
-          <div className="col-8">
+      <section className="container py-3">
+        <div className="row py-3 justify-content-center ">
+          <div className="col-12">
             <img src={Profil2} className="w-100" alt="profil2" />
           </div>
         </div>

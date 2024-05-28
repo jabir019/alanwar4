@@ -11,7 +11,7 @@ export default function SectionKegiatan() {
         </div>
         <div className="container h-100 ">
           <div className="row mx-auto align-items-center justify-content-center ">
-            <div className="col-3">
+            <div className="col-md-3 col-12 mb-3">
               <div className="card">
                 <img src={kegiatan1} className="card-img-top" alt="kegiatan1" />
                 <div className="card-body">
@@ -23,7 +23,7 @@ export default function SectionKegiatan() {
                 </div>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-md-3 col-12 mb-3">
               <div className="card">
                 <img src={kegiatan2} className="card-img-top" alt="kegiatan2" />
                 <div className="card-body">
@@ -35,7 +35,7 @@ export default function SectionKegiatan() {
                 </div>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-md-3 col-12 mb-3">
               <div className="card">
                 <img src={kegiatan3} className="card-img-top" alt="kegiatan3" />
                 <div className="card-body">

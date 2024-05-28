@@ -1,7 +1,11 @@
+import MainLayout from "../layouts/MainLayout";
+
 export default function Kontak() {
   return (
     <>
-      <h1>Kontak</h1>
+      <MainLayout>
+        <h1>Kontak</h1>
+      </MainLayout>
     </>
   );
 }

@@ -1,7 +1,11 @@
+import MainLayout from "../layouts/MainLayout";
+
 export default function Galeri() {
   return (
     <>
-      <h1>Galeri</h1>
+      <MainLayout>
+        <h1>Galeri</h1>
+      </MainLayout>
     </>
   );
 }
