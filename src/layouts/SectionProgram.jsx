@@ -3,9 +3,9 @@ import kegiatan from "../assets/Mask group.png";
 export default function SectionProgram() {
   return (
     <>
-      <section className="container bg-seondary-subtle py-5">
+      <section className="container bg-primary-subtle py-5">
         <div className="row">
-          <div className="col-4">
+          <div className="col-md-4 col-12">
             <h1 className="text-primary">
               Program Unggulan Pondok Pesantren Al-Anwar IV
             </h1>
@@ -19,7 +19,7 @@ export default function SectionProgram() {
             </div>
           </div>
 
-          <div className="col-8">
+          <div className="col-md-8 col-12">
             <div className="row">
               <div className="col-6">
                 <div className="card">

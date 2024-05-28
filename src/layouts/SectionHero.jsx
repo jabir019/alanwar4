@@ -10,8 +10,8 @@ export default function SectionHero() {
           <div className="bg overlay-bg"></div>
           <img src={background} className="bg img-bg" alt="blur" />
 
-          <div className="row align-items-center ">
-            <div className="col-6 text-white ">
+          <div className="row">
+            <div className="col-md-6 col-12 text-white align-self-center">
               <h5>Selamat datang di</h5>
               <h1>Pondok Pesantren Alanwar IV Sarang</h1>
               <p>
@@ -31,7 +31,7 @@ export default function SectionHero() {
                 PROFIL
               </button>
             </div>
-            <div className="col-6">
+            <div className="col-md-6 col-12 align-self-end">
               <img className="w-100" src={foto} alt="foto" />
             </div>
           </div>

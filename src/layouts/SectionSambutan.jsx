@@ -5,10 +5,10 @@ export default function SectionSambutan() {
     <>
       <section className="container py-5">
         <div className="row py-5">
-          <div className="col-6">
+          <div className="col-md-6 col-12">
             <img className="w-100" src={abi} alt="fotoabi" />
           </div>
-          <div className="col-6">
+          <div className="col-md-6 col-12">
             <h4>KH. Taj Yasin Maimoen</h4>
             <h2>
               Sambutan Pengasuh Pondok Pesantren Al Anwar IV Sarang, Rembang,

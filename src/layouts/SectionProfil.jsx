@@ -4,7 +4,7 @@ export default function SectionProfil() {
   return (
     <>
       <section className="container py-5">
-        <div className="row py-5">
+        <div className="row py-5 justify-content-center ">
           <div className="col-8">
             <img src={Profil2} className="w-100" alt="profil2" />
           </div>
@@ -54,7 +54,7 @@ export default function SectionProfil() {
               Menanamkan keilmuan yang berlandaskan Al-Quran dan kutubussalaf.
             </p>
           </div>
-          <button className="col-4 bg-primary">DOWNLOAD BROSUR</button>
+          <button className="col-4 bg-primary ">DOWNLOAD BROSUR</button>
         </div>
       </section>
     </>

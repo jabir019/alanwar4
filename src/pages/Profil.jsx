@@ -12,8 +12,12 @@ export default function Profil() {
               <h1>PROFIL</h1>
             </div>
 
-            <div className="bg overlay-bg"></div>
-            <img src={Profil1} className="bg img-bg " alt="profil1" />
+            <div className=" bg overlay-bg"></div>
+            <img
+              src={Profil1}
+              className="bg img-bg object-fit-cover"
+              alt="profil1"
+            />
           </div>
         </section>
         <SectionProfil />
