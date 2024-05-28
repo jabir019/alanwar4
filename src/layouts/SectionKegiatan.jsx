@@ -6,11 +6,11 @@ export default function SectionKegiatan() {
   return (
     <>
       <section>
-        <div className="container py-5 text-primary">
+        <div className="container py-5 text-primary ">
           <h3>Kegiatan Pondok</h3>
         </div>
-        <div className="container">
-          <div className="row mx-auto ">
+        <div className="container h-100 ">
+          <div className="row mx-auto align-items-center justify-content-center ">
             <div className="col-3">
               <div className="card">
                 <img src={kegiatan1} className="card-img-top" alt="kegiatan1" />

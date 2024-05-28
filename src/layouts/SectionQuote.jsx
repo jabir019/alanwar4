@@ -3,7 +3,7 @@ import cahngaji from "../assets/cahngaji.png";
 export default function SectionQuote() {
   return (
     <>
-      <section className="section-hero">
+      <section className="section-hero ">
         <div className="container">
           <div className="row align-items-center  justify-content-center text-center ">
             <div className="col-8 text-white ">
@@ -12,7 +12,7 @@ export default function SectionQuote() {
                 "Ojo mikir engko dadi opo. Sing penting saiki sinau sing
                 sregep."
               </h1>
-              <button type="button" class="btn btn-warning btn-lg ">
+              <button type="button" class="btn btn-warning btn-lg m-5 ">
                 AYO MONDOK SEKARANG
               </button>
             </div>

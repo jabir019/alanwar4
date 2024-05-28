@@ -24,7 +24,10 @@ export default function SectionHero() {
                 PENDAFTARAN
               </button>
 
-              <button type="button" className="btn btn-outline-warning  btn-mb">
+              <button
+                type="button"
+                className="btn btn-outline-warning  btn-mb m-3 "
+              >
                 PROFIL
               </button>
             </div>

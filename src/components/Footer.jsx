@@ -3,7 +3,7 @@ import anakhormat from "../assets/anakhormat.png";
 export default function Footer() {
   return (
     <>
-      <section className="section-hero">
+      <section className="section-hero mt-5">
         <div className="container h-100">
           <div className="row  h-100 align-items-center justify-items-center">
             <div className="col-6 ">
