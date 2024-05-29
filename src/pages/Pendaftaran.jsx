@@ -30,7 +30,7 @@ export default function Pendaftaran() {
         </div>
 
         <section>
-          <div className="container mt-5">
+          <div className="container mt-5 bg-angger">
             <div className="row justify-content-center">
               <div className="col-md-4 col-12 me-1">
                 <form>
@@ -93,9 +93,9 @@ export default function Pendaftaran() {
             </div>
           </div>
         </section>
-        <div className="container">
+        <div className="container bg-angger">
           <div className="row justify-content-center">
-            <div className="col-me-4 col-12me-1">
+            <div className="col-md-4 col-12 me-1">
               <form>
                 <div className="mb-3">
                   <label className="form-label">Tempat Lahir*</label>
@@ -166,7 +166,7 @@ export default function Pendaftaran() {
           </div>
         </div>
         <section>
-          <div className="container">
+          <div className="container bg-angger">
             <div className="row justify-content-center">
               <div className="col-md-4 col-12 me-1">
                 <form>
@@ -275,7 +275,7 @@ export default function Pendaftaran() {
           </div>
         </section>
         <section>
-          <div className="container">
+          <div className="container bg-angger">
             <div className="row justify-content-center">
               <div className="col-md-8 col-12">
                 <div className="mb-3">

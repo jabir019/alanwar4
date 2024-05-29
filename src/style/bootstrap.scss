@@ -15,6 +15,7 @@ $custom-colors:(
     "primary": #000066,
     "warning": #FFFF00,
     "secondary-subtle": #D9D9D9,
+    "angger": #E9E9EF,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
