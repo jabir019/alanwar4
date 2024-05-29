@@ -54,7 +54,13 @@ export default function SectionProfil() {
               Menanamkan keilmuan yang berlandaskan Al-Quran dan kutubussalaf.
             </p>
           </div>
-          <button className="col-4 bg-primary ">DOWNLOAD BROSUR</button>
+          <div className="col-12">
+            <div className="d-flex py-1 justify-content-end">
+              <button className=" py-0 bg-primary text-white ">
+                DOWNLOAD BROSUR
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </>

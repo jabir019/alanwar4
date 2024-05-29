@@ -6,7 +6,7 @@ import elips3 from "../assets/elips3.png";
 export default function Footer() {
   return (
     <>
-      <section className="section-hero mt-5">
+      <footer className="section-hero mt-5">
         <div className="container h-100">
           <div className="row  h-100 align-items-center justify-items-center">
             <div className="col-6 ">
@@ -43,10 +43,12 @@ export default function Footer() {
         <div className="bg overlay-bg"></div>
         <img src={anakhormat} className="bg img-bg " alt="anakhormat" />
 
-        <div className="container bg-primary text-center m-0 ">
-          <p className="text-white">Copyright ©️ 2024 by Jabir</p>
+        <div className="bg-primary text-center m-0 ">
+          <div className="container">
+            <p className="text-white">Copyright ©️ 2024 by Jabir</p>
+          </div>
         </div>
-      </section>
+      </footer>
     </>
   );
 }
