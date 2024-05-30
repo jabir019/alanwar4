@@ -8,6 +8,8 @@ import Program from "./pages/Program";
 import Kontak from "./pages/Kontak";
 import Pendaftaran from "./pages/Pendaftaran";
 import NotFound from "./pages/NotFound";
+import Dashbord from "./pages/Dashbord";
+import Admin from "./pages/Admin";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/program" element={<Program />} />
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/pendaftaran" element={<Pendaftaran />} />
+          <Route path="/dashbord" element={<Dashbord />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
