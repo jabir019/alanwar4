@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import foto from "../assets/background-1.png";
 import background from "../assets/bacground.png";
 
@@ -8,7 +9,11 @@ export default function SectionHero() {
         <div className="container">
           {/* bacground & overlay */}
           <div className="bg overlay-bg"></div>
-          <img src={background} className="bg img-bg" alt="blur" />
+          <img
+            src={background}
+            className="bg img-bg object-fit-cover"
+            alt="blur"
+          />
 
           <div className="row">
             <div className="col-md-6 col-12 text-white align-self-center">
@@ -20,16 +25,21 @@ export default function SectionHero() {
                 Hj. Nawal Nur Arafah yang di dalamnya termuat Lembaga SMK Al
                 Anwar Sarang dan MTS Sains Al Anwar 4.
               </p>
-              <button type="button" className="btn btn-light btn-mb">
+              <NavLink
+                to={"/pendaftaran"}
+                type="button"
+                className="btn btn-light btn-mb"
+              >
                 PENDAFTARAN
-              </button>
+              </NavLink>
 
-              <button
+              <NavLink
+                to={"/profil"}
                 type="button"
                 className="btn btn-outline-warning  btn-mb m-3 "
               >
                 PROFIL
-              </button>
+              </NavLink>
             </div>
             <div className="col-md-6 col-12 align-self-end">
               <img className="w-100" src={foto} alt="foto" />

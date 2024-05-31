@@ -53,10 +53,6 @@ export default function SectionAdmin() {
           </div>
         </div>
       </div>
-
-      <footer className="bg-primary text-center">
-        <p className="text-white">Created by Jabir</p>
-      </footer>
     </>
   );
 }

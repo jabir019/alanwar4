@@ -5,9 +5,9 @@ export default function Navbar() {
     <>
       <nav className="navbar navbar-expand-lg bg-primary">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <NavLink to={"/"} className="navbar-brand">
             <img src={logo} alt="logo" />
-          </a>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"

@@ -20,7 +20,11 @@ export default function SectionQuote() {
         </div>
 
         <div className="bg overlay-bg"></div>
-        <img src={cahngaji} className="bg img-bg" alt="cahngaji" />
+        <img
+          src={cahngaji}
+          className="object-fit-cover bg img-bg"
+          alt="cahngaji"
+        />
       </section>
     </>
   );
