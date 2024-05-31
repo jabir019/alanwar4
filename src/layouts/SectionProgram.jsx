@@ -22,7 +22,7 @@ export default function SectionProgram() {
 
           <div className="col-md-8 col-12">
             <div className="row">
-              <div className="col-6">
+              <div className="col-md-6 col-12">
                 <div className="card">
                   <div className="card-body">
                     <h3 className="card-title text-primary ">
@@ -37,7 +37,7 @@ export default function SectionProgram() {
                   </div>
                 </div>
               </div>
-              <div className="col-6">
+              <div className="col-md-6 col-12">
                 <div className="card">
                   <div className="card-body">
                     <h3 className="card-title text-primary ">
@@ -52,7 +52,7 @@ export default function SectionProgram() {
                   </div>
                 </div>
               </div>
-              <div className="col-6">
+              <div className="col-md-6 col-12">
                 <div className="card">
                   <div className="card-body">
                     <h3 className="card-title text-primary ">Juz 'Amma</h3>
@@ -65,7 +65,7 @@ export default function SectionProgram() {
                   </div>
                 </div>
               </div>
-              <div className="col-6">
+              <div className="col-md-6 col-12">
                 <div className="card">
                   <div className="card-body">
                     <h3 className="card-title text-primary ">
@@ -80,7 +80,7 @@ export default function SectionProgram() {
                   </div>
                 </div>
               </div>
-              <div className="col-6">
+              <div className="col-md-6 col-12">
                 <div className="card">
                   <div className="card-body">
                     <h3 className="card-title text-primary ">
@@ -95,7 +95,7 @@ export default function SectionProgram() {
                   </div>
                 </div>
               </div>
-              <div className="col-6">
+              <div className="col-md-6 col-12">
                 <div className="card">
                   <div className="card-body">
                     <h3 className="card-title text-primary ">
