@@ -7,7 +7,7 @@ export default function SectionKegiatan() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("https://jabir.neuversity.site/wp-json/wp/v2/posts?")
+    fetch("https://jabir.neuversity.site/wp-json/wp/v2/posts?_embed")
       .then((response) => response.json())
       .then((data) => setPosts(data));
   }, []);
@@ -27,7 +27,12 @@ export default function SectionKegiatan() {
               <div className="col-md-3 col-12 mb-3">
                 <div className="card">
                   <img
-                    src={kegiatan1}
+                    src={
+                      post._embedded["wp:featuredmedia"]
+                        ? post._embedded["wp:featuredmedia"][0]["media_details"]
+                            .sizes.medium["source_url"]
+                        : "https://picsum.photos/100/100"
+                    }
                     className="card-img-top"
                     alt="kegiatan1"
                   />
