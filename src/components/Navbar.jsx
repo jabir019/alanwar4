@@ -3,13 +3,13 @@ import logo from "../assets/logo-pondok.svg";
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-primary">
+      <nav className="navbar navbar-dark navbar-expand-lg bg-primary">
         <div className="container">
           <NavLink to={"/"} className="navbar-brand">
             <img src={logo} alt="logo" />
           </NavLink>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler text-white"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"

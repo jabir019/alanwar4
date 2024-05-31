@@ -1,12 +1,10 @@
-import MainLayout from "../layouts/MainLayout";
+import MainLayLogin from "../layouts/MainLayLogin";
 import SectionDashbor from "../layouts/SectionDashbor";
 
 export default function Dashbord() {
   return (
-    <>
-      <MainLayout>
-        <SectionDashbor />
-      </MainLayout>
-    </>
+    <MainLayLogin>
+      <SectionDashbor />
+    </MainLayLogin>
   );
 }

@@ -18,15 +18,15 @@ export default function Footer() {
             <div className="col-4 position-relative d-flex justify-content-center align-items-center ">
               <img
                 className="position-absolute"
-                width={178}
-                height={178}
+                width={150}
+                height={150}
                 src={elips3}
                 alt=""
               />
               <img
                 className="position-absolute"
-                width={178}
-                height={178}
+                width={150}
+                height={150}
                 src={elips2}
                 alt=""
               />

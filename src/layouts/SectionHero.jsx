@@ -41,7 +41,7 @@ export default function SectionHero() {
                 PROFIL
               </NavLink>
             </div>
-            <div className="col-md-6 col-12 align-self-end">
+            <div className="col-md-6 object-fit-cover col-12 align-self-end">
               <img className="w-100" src={foto} alt="foto" />
             </div>
           </div>
