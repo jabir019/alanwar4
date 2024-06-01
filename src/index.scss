@@ -54,3 +54,11 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.img-program {
+    height: 200px;
+    @media (min-width: 768px) {
+        height: 100%;
+        
+    }
+}
