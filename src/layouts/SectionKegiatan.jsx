@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import kegiatan1 from "../assets/kegiatan1.png";
 import kegiatan2 from "../assets/kegiatan2.png";
 import kegiatan3 from "../assets/kegiatan3.png";
+import { Link } from "react-router-dom";
 
 export default function SectionKegiatan() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("https://jabir.neuversity.site/wp-json/wp/v2/posts?_embed")
+    fetch("https://web.abdulhaxor.my.id/wp-json/wp/v2/posts?_embed")
       .then((response) => response.json())
       .then((data) => setPosts(data));
   }, []);
@@ -31,7 +32,7 @@ export default function SectionKegiatan() {
                       post._embedded["wp:featuredmedia"]
                         ? post._embedded["wp:featuredmedia"][0]["media_details"]
                             .sizes.medium["source_url"]
-                        : "https://picsum.photos/100/100"
+                        : "https://picsum.photos/100/100?"
                     }
                     className="card-img-top"
                     alt="kegiatan1"
@@ -39,6 +40,7 @@ export default function SectionKegiatan() {
                   <div className="card-body">
                     <h5 className="card-title">{post.title.rendered}</h5>
                     <p className="card-text">{post.date}</p>
+                    <Link to={`/posts/${post.id}`}>Lihat Kegiatan</Link>
                   </div>
                 </div>
               </div>

@@ -1,43 +1,52 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Photo from "../assets/Rectangle 35.png";
 
 export default function SectionPosts() {
+  const [posts, setPosts] = useState(null);
+
   const params = useParams();
+
+  useEffect(() => {
+    fetch(
+      `https://web.abdulhaxor.my.id/wp-json/wp/v2/posts/${params.id}?_embed`
+    )
+      .then((Response) => Response.json())
+      .then((data) => {
+        if (data.id) setPosts(data);
+        console.log(data);
+      });
+  }, []);
   return (
     <>
-      <div style={{ height: "20vh", width: "100vw" }} className="bg-primary">
-        <img src={Photo} alt="photo" className="w-100 h-100 object-fit-cover" />
-      </div>
+      {posts ? (
+        <>
+          <div
+            style={{ height: "20vh", width: "100vw" }}
+            className="bg-primary"
+          >
+            <img
+              src={
+                posts._embedded["wp:featuredmedia"]
+                  ? posts._embedded["wp:featuredmedia"][0].media_details.sizes
+                      .thumbnail.source_url
+                  : "https://picsum.photos/300/300?"
+              }
+              className="w-100 h-100 object-fit-cover"
+              alt="random image"
+            />
+          </div>
 
-      <div className="container mt-5">
-        <h1>Post Detail</h1>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea
-            possimus quibusdam iusto animi optio quod. Asperiores eos sed odio
-            ducimus nisi est et eveniet?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad libero
-            corrupti, reprehenderit, mollitia aliquam numquam quam reiciendis,
-            est temporibus voluptatum veniam minima blanditiis amet architecto?
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            consequuntur minus tempore totam accusamus ratione porro, quia,
-            repudiandae est, dignissimos nemo a rem sed rerum tempora quisquam
-            aspernatur facilis deleniti inventore hic voluptatibus ducimus.
-            Maxime repellat dolorem quas magni quisquam aperiam. Deserunt
-            placeat, iusto culpa nulla rem nostrum vel nisi illum quisquam sint
-            reiciendis laboriosam quam cumque laborum explicabo soluta itaque
-            mollitia nobis illo sapiente corporis in molestias tempore. Mollitia
-            quam, quasi architecto expedita rerum, ad sit sunt unde natus
-            laborum pariatur qui, similique in? Vitae odio necessitatibus ipsam?
-            Ab laboriosam, nesciunt iusto modi explicabo repellat aliquid
-            repudiandae reprehenderit fugit.
-          </p>
-        </div>
-      </div>
+          <div className="container mt-5">
+            <h1>{posts.title.rendered}</h1>
+            <div
+              dangerouslySetInnerHTML={{ __html: posts.content.rendered }}
+            ></div>
+          </div>
+        </>
+      ) : (
+        <>Data Tidak ditemukan</>
+      )}
     </>
   );
 }
