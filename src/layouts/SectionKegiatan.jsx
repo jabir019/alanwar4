@@ -30,8 +30,7 @@ export default function SectionKegiatan() {
                   <img
                     src={
                       post._embedded["wp:featuredmedia"]
-                        ? post._embedded["wp:featuredmedia"][0]["media_details"]
-                            .sizes.medium["source_url"]
+                        ? post._embedded["wp:featuredmedia"][0]["source_url"]
                         : "https://picsum.photos/100/100?"
                     }
                     className="card-img-top"

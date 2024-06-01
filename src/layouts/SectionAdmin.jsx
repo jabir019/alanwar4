@@ -5,8 +5,33 @@ import Swal from "sweetalert2";
 export default function SectionAdmin() {
   const [judul, setJudul] = useState("");
   const [konten, setKonten] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  function createPost() {
+  // state image
+  const [image, setImage] = useState(null);
+
+  async function uploadImage(image) {
+    const formData = new FormData();
+    formData.append("file", image);
+
+    const response = await fetch(
+      "https://web.abdulhaxor.my.id/wp-json/wp/v2/media",
+      {
+        method: "POST",
+        headers: {
+          Authorization: "Bearer " + localStorage.getItem("token"),
+        },
+        body: formData,
+      }
+    );
+    const data = await response.json();
+    if (!data.id) throw new Error("tidak ada gambar");
+
+    return data.id;
+  }
+
+  async function createPost() {
+    const featured_media_id = await uploadImage(image);
     fetch("https://web.abdulhaxor.my.id/wp-json/wp/v2/posts", {
       method: "POST",
       headers: {
@@ -17,6 +42,7 @@ export default function SectionAdmin() {
         title: judul,
         content: konten,
         status: "publish",
+        featured_media: featured_media_id,
       }),
     }).then(async (Response) => {
       const data = await Response.json();
@@ -48,14 +74,19 @@ export default function SectionAdmin() {
     <div className="container my-5 ">
       <div className="row justify-content-center">
         <div className="col-6 bg-angger">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} encType="multipart/form-data">
             <h2 className="text-center text-primary">
               Membuat Postingan Website
             </h2>
             <div id="emailHelp" className="form-text">
               Featured Media
             </div>
-            <input type="file" className="form-control" />
+            <input
+              type="file"
+              className="form-control"
+              onChange={(e) => setImage(e.target.files[0])}
+              id="featured_media"
+            />
             <div className="mb-3">
               <div id="emailHelp" className="form-text">
                 Judul
