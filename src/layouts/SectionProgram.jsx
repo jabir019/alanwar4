@@ -16,7 +16,7 @@ export default function SectionProgram() {
               </p>
               <div>
                 <img
-                  className="w-100 pbject-fit-cover img-program "
+                  className="w-100 object-fit-cover img-program "
                   src={kegiatan}
                   alt="kegiatan"
                 />
