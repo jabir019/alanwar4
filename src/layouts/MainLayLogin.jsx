@@ -21,7 +21,7 @@ export default function MainLayLogin({ children }) {
     [];
 
   return (
-    <div className="d-flex flex-column " style={{ minHeight: "0vh" }}>
+    <div className="d-flex flex-column " style={{ minHeight: "100vh" }}>
       <NavLogin />
 
       <main>{children}</main>

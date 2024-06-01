@@ -13,7 +13,7 @@ export default function SectionAdminLogin() {
 
     alert("Login Berhasil");
     setData(true);
-    fetch("https://jabir.neuversity.site/wp-json/jwt-auth/v1/token", {
+    fetch("https://web.abdulhaxor.my.id/wp-json/jwt-auth/v1/token", {
       method: "POST",
       body: new URLSearchParams({
         username: username,

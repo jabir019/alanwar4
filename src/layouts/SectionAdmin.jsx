@@ -1,6 +1,12 @@
+import { useState } from "react";
+
 export default function SectionAdmin() {
+  const [judul, setJudul] = useState("");
+  const [konten, setKonten] = useState("");
+
   return (
     <div className="container my-5 ">
+      {judul} & {konten}
       <div className="row justify-content-center">
         <div className="col-6 bg-angger">
           <form>
@@ -16,9 +22,12 @@ export default function SectionAdmin() {
                 Judul
               </div>
               <input
+                value={judul}
+                onInput={(event) => setJudul(event.target.value)}
                 type="username"
                 className="form-control"
-                id="username"
+                id="judul"
+                rows={4}
                 placeholder="Judul Postingan"
               />
             </div>
@@ -26,7 +35,9 @@ export default function SectionAdmin() {
               <div id="emailHelp" className="form-text">
                 Konten
               </div>
-              <input
+              <textarea
+                value={konten}
+                onInput={(event) => setKonten(event.target.value)}
                 type="username"
                 className="form-control"
                 id="username"
