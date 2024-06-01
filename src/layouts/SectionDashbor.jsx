@@ -52,15 +52,13 @@ export default function SectionDashbor() {
                 <label htmlFor="username" className="form-label">
                   Username
                 </label>
-                <input type="username" className="form-control" id="username" />
-                <div
-                  id="emailHelp"
-                  className="form-text"
+                <input
+                  type="username"
                   value={username}
                   onChange={(event) => setUsername(event.target.value)}
-                >
-                  Admin Username
-                </div>
+                  className="form-control"
+                  id="username"
+                />
               </div>
               <div className="mb-3">
                 <label htmlFor="exampleInputPassword1" className="form-label">
