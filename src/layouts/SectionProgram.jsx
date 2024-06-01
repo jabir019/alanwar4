@@ -20,97 +20,31 @@ export default function SectionProgram() {
             </div>
           </div>
 
-          <div className="col-md-8 col-12">
-            <div className="row">
-              <div className="col-md-6 col-12">
-                <div className="card">
-                  <div className="card-body">
-                    <h3 className="card-title text-primary ">
-                      Tahfidz Alqur'an
-                    </h3>
-                    <p className="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quo, quaerat architecto saepe cupiditate, beatae officiis
-                      incidunt reiciendis molestias assumenda eaque veniam. In
-                      veritatis facere sequi.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-12">
-                <div className="card">
-                  <div className="card-body">
-                    <h3 className="card-title text-primary ">
-                      Metode Al-Qur'an Yanbu'a
-                    </h3>
-                    <p className="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quo, quaerat architecto saepe cupiditate, beatae officiis
-                      incidunt reiciendis molestias assumenda eaque veniam. In
-                      veritatis facere sequi.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-12">
-                <div className="card">
-                  <div className="card-body">
-                    <h3 className="card-title text-primary ">Juz 'Amma</h3>
-                    <p className="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quo, quaerat architecto saepe cupiditate, beatae officiis
-                      incidunt reiciendis molestias assumenda eaque veniam. In
-                      veritatis facere sequi.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-12">
-                <div className="card">
-                  <div className="card-body">
-                    <h3 className="card-title text-primary ">
-                      Metode Nahwu Al-Asas
-                    </h3>
-                    <p className="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quo, quaerat architecto saepe cupiditate, beatae officiis
-                      incidunt reiciendis molestias assumenda eaque veniam. In
-                      veritatis facere sequi.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-12">
-                <div className="card">
-                  <div className="card-body">
-                    <h3 className="card-title text-primary ">
-                      Kitab Kuning Bandongan
-                    </h3>
-                    <p className="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quo, quaerat architecto saepe cupiditate, beatae officiis
-                      incidunt reiciendis molestias assumenda eaque veniam. In
-                      veritatis facere sequi.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-12">
-                <div className="card">
-                  <div className="card-body">
-                    <h3 className="card-title text-primary ">
-                      Sorogan Kubutus Salaf
-                    </h3>
-                    <p className="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quo, quaerat architecto saepe cupiditate, beatae officiis
-                      incidunt reiciendis molestias assumenda eaque veniam. In
-                      veritatis facere sequi.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="col-md-4 col-12 mt-3 mt-md-0">
+            <CardProgram
+              judul="Tahfidz Alqur'an"
+              deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
+            />
+            <CardProgram
+              judul="Juz 'Amma"
+              deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
+            />
+            <CardProgram
+              judul="Kitab Kuning Bandongan"
+              deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
+            />
+            <CardProgram
+              judul="Metode Al-qur'an Yanbu'a"
+              deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
+            />
+            <CardProgram
+              judul="Metode Nahwu Al-Asas"
+              deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
+            />
+            <CardProgram
+              judul="Sorogan Kutubus Salaf"
+              deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
+            />
           </div>
         </div>
       </section>
