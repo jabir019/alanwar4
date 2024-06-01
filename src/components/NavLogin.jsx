@@ -1,18 +1,37 @@
 import Logo from "../assets/logoaja.svg";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 export default function NavLogin() {
   const navigate = useNavigate();
 
   function handleLogout() {
-    const konfirmasi = confirm("Apakah anda yakin ingin keluar?");
-    if (konfirmasi) {
-      // remove token
-      localStorage.removeItem("token");
+    // menampilkan pesan logout menggunakan sweetalert2
+    Swal.fire({
+      title: "Logout",
+      text: "Apakah anda yakin ingin keluar?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Ya",
+      cancelButtonText: "Batal",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        //remove token
+        localStorage.removeItem("token");
 
-      // redirect ke halaman login
-      navigate("/admin/login");
-    }
+        // menampilkan pesan berhasil logout
+        Swal.fire({
+          title: "Logout Berhasil",
+          text: "Anda Berhasil Logout",
+          icon: "success",
+        });
+
+        // redirect ke halaman login
+        navigate("/admin/login");
+      }
+    });
   }
 
   return (

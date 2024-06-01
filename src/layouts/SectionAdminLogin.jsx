@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 export default function SectionAdminLogin() {
   const [isSuccess, setIsSuccess] = useState(null);
@@ -11,35 +12,34 @@ export default function SectionAdminLogin() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    alert("Login Berhasil");
     setData(true);
     fetch("https://web.abdulhaxor.my.id/wp-json/jwt-auth/v1/token", {
       method: "POST",
-      body: new URLSearchParams({
+      headers: {
+        "Content-Type": "application/json",
+      },
+
+      body: JSON.stringify({
         username: username,
         password: password,
       }),
     })
-      .then((resp) => {
-        if (resp.ok) {
-          setIsSuccess(true);
-          console.log("berhasil");
-        } else {
-          setIsSuccess(false);
-          console.log("gagal");
-        }
-
-        return resp.json();
-      })
+      .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         if (data.token) {
-          alert("Login Berhasil");
-          // set token ke local storage
+          Swal.fire({
+            title: "Login Berhasil",
+            text: "Anda Berhasil Login",
+            icon: "success",
+          });
           localStorage.setItem("token", data.token);
           navigate("/admin");
         } else {
-          alert("Login Gagal");
+          Swal.fire({
+            title: "Login Gagal",
+            text: "Login Gagal",
+            icon: "error",
+          });
         }
       })
       .catch((error) => console.error("Error:", error));

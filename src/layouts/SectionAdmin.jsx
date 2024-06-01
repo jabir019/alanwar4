@@ -6,7 +6,6 @@ export default function SectionAdmin() {
 
   return (
     <div className="container my-5 ">
-      {judul} & {konten}
       <div className="row justify-content-center">
         <div className="col-6 bg-angger">
           <form>
