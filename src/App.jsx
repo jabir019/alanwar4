@@ -10,6 +10,7 @@ import Pendaftaran from "./pages/Pendaftaran";
 import NotFound from "./pages/NotFound";
 import AdminLogin from "./pages/AdminLogin";
 import Admin from "./pages/Admin";
+import Posts from "./pages/Posts";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/pendaftaran" element={<Pendaftaran />} />
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/posts/:id" element={<Posts />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
