@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react";
-import MainLayLogin from "./MainLayLogin";
+import { useNavigate } from "react-router-dom";
 
-export default function SectionDashbor() {
+export default function SectionAdminLogin() {
   const [isSuccess, setIsSuccess] = useState(null);
   const [data, setData] = useState(null);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    alert("Login Berhasil");
     setData(true);
     fetch("https://jabir.neuversity.site/wp-json/jwt-auth/v1/token", {
       method: "POST",
@@ -32,6 +35,9 @@ export default function SectionDashbor() {
         console.log(data);
         if (data.token) {
           alert("Login Berhasil");
+          // set token ke local storage
+          localStorage.setItem("token", data.token);
+          navigate("/admin");
         } else {
           alert("Login Gagal");
         }
