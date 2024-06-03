@@ -9,7 +9,7 @@ export default function SectionPosts() {
 
   useEffect(() => {
     fetch(
-      `https://web.abdulhaxor.my.id/wp-json/wp/v2/posts/${params.id}?_embed`
+      `https://jabir.neuversity.site/wp-json/wp/v2/posts/${params.id}?_embed`
     )
       .then((Response) => Response.json())
       .then((data) => {

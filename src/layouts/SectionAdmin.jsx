@@ -15,7 +15,7 @@ export default function SectionAdmin() {
     formData.append("file", image);
 
     const response = await fetch(
-      "https://web.abdulhaxor.my.id/wp-json/wp/v2/media",
+      "https://jabir.neuversity.site/wp-json/wp/v2/media",
       {
         method: "POST",
         headers: {
@@ -32,7 +32,7 @@ export default function SectionAdmin() {
 
   async function createPost() {
     const featured_media_id = await uploadImage(image);
-    fetch("https://web.abdulhaxor.my.id/wp-json/wp/v2/posts", {
+    fetch("https://jabir.neuversity.site/wp-json/wp/v2/posts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
