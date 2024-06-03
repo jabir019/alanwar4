@@ -1,7 +1,40 @@
+import { useState } from "react";
+
 import MainLayout from "../layouts/MainLayout";
 import Profil1 from "../assets/profil1.png";
 
 export default function Pendaftaran() {
+  const [name, setName] = useState("");
+  const [nik, setNik] = useState("");
+  const [phone, setPhone] = useState("");
+  const [namapanggilan, setNamapanggilan] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    // window.open("https://wa.me/<nomor_wa>?text=" =+ encodeURIComponent('<format penulisan>'.trim((). "blank")");
+
+    window.open(
+      "https://wa.me/+6285280005195?text=" +
+        encodeURIComponent(
+          `
+
+Halo saya ingin mendaftar ke pondok,
+
+*berikut data diri saya*
+
+- Nama : ${name}
+- Email : ${nik}
+- Nomor HP : ${namapanggilan}
+- Alamat : ${phone}
+
+
+      `.trim()
+        ),
+      "_blank"
+    );
+  }
+
   return (
     <>
       <MainLayout>
@@ -37,6 +70,8 @@ export default function Pendaftaran() {
                   <div className="mb-3">
                     <label className="form-label">Nama Lengkap & Gelar*</label>
                     <input
+                      value={name}
+                      onChange={(event) => setName(event.target.value)}
                       type="text"
                       className="form-control"
                       id="nama"
@@ -46,6 +81,8 @@ export default function Pendaftaran() {
                   <div className="mb-3">
                     <label>NIK/Nomor KTP*</label>
                     <input
+                      value={nik}
+                      onChange={(event) => setNIK(event.target.value)}
                       type="number"
                       className="form-control"
                       id="nik"
@@ -59,6 +96,8 @@ export default function Pendaftaran() {
                   <div className="mb-3">
                     <label className="form-label">Nama Panggilan*</label>
                     <input
+                      value={namapanggilan}
+                      onChange={(event) => setNamapanggilan(event.target.value)}
                       type="text"
                       className="form-control"
                       id="nama"
@@ -68,237 +107,18 @@ export default function Pendaftaran() {
                   <div className="mb-3">
                     <label>Nomor Telephone*</label>
                     <input
+                      value={phone}
+                      onChange={(event) => setPhone(event.target.value)}
                       type="number"
                       className="form-control"
                       id="nik"
                       placeholder="+628xx-xxxx-xxxx"
                     />
+                    <button type="submit" onClick={handleSubmit}>
+                      Submit
+                    </button>
                   </div>
                 </form>
-              </div>
-              <div className="col-md-8 col-12">
-                <div className="mb-3">
-                  <label htmlFor="exampleInputEmail1" className="form-label">
-                    Email Aktif*
-                  </label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="InputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Pastikan Email Anda benar"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div className="container bg-angger">
-          <div className="row justify-content-center">
-            <div className="col-md-4 col-12 me-1">
-              <form>
-                <div className="mb-3">
-                  <label className="form-label">Tempat Lahir*</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="nama"
-                    placeholder="ex. Kota"
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="jenis_kelamin">Jenis Kelamin*:</label>
-                  <br />
-                  <input
-                    type="radio"
-                    id="laki_laki"
-                    name="jenis_kelamin"
-                    defaultValue="Laki-laki"
-                  />
-                  <label htmlFor="laki_laki">Laki-laki</label>
-                  <input
-                    type="radio"
-                    id="perempuan"
-                    name="jenis_kelamin"
-                    defaultValue="Perempuan"
-                    className="ms-3"
-                  />
-                  <label htmlFor="perempuan">Perempuan</label>
-                </div>
-              </form>
-            </div>
-            <div className="col-md-4 col-12">
-              <form>
-                <div className="mb-3">
-                  <label className="form-label">Tanggal Lahir*</label>
-                  <input
-                    type="date"
-                    className="form-control"
-                    id="nama"
-                    placeholder="DD/MM/YYYY"
-                  />
-                </div>
-                <div className="mb-3">
-                  <label>Pekerjaan*</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="nik"
-                    placeholder="ex. Pengangguran"
-                  />
-                </div>
-              </form>
-            </div>
-            <div className="col-md-8 col-12">
-              <div className="mb-3">
-                <label htmlFor="exampleInputEmail1" className="form-label">
-                  Alamat Lengkap*
-                </label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="InputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="ex. Jln. Kenangan"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <section>
-          <div className="container bg-angger">
-            <div className="row justify-content-center">
-              <div className="col-md-4 col-12 me-1">
-                <form>
-                  <div className="mb-3">
-                    <label className="form-label">Provinsi*</label>
-                    <select
-                      className="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected="" disabled>
-                        Provinsi
-                      </option>
-                      <option value={1}>One</option>
-                      <option value={2}>Two</option>
-                      <option value={3}>Three</option>
-                    </select>
-                  </div>
-                  <div className="mb-3">
-                    <label>Kecamatan*</label>
-                    <select
-                      className="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected="" disabled>
-                        Kecamatan
-                      </option>
-                      <option value={1}>One</option>
-                      <option value={2}>Two</option>
-                      <option value={3}>Three</option>
-                    </select>
-                  </div>
-                </form>
-              </div>
-              <div className="col-md-4 col-12">
-                <form>
-                  <div className="mb-3">
-                    <label className="form-label">Kabupaten/Kota*</label>
-                    <select
-                      className="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected="" disabled>
-                        Kabupaten/Kota
-                      </option>
-                      <option value={1}>One</option>
-                      <option value={2}>Two</option>
-                      <option value={3}>Three</option>
-                    </select>
-                  </div>
-                  <div className="mb-3">
-                    <label>Kelurahan/Desa*</label>
-                    <input
-                      type="number"
-                      className="form-control"
-                      id="nik"
-                      placeholder="ex. Kalipang"
-                    />
-                  </div>
-                </form>
-              </div>
-              <div className="col-md-4 col-12">
-                <form>
-                  <div className="mb-3">
-                    <label className="form-label">Pendidikan Terakhir*</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="nama"
-                      placeholder="ex. John"
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label>Kepengurusan di NU*</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="nik"
-                      placeholder="ex. Ketua"
-                    />
-                  </div>
-                </form>
-              </div>
-              <div className="col-md-4 col-12">
-                <form>
-                  <div className="mb-3">
-                    <label className="form-label">Status Pernikahan*</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="nama"
-                      placeholder="ex. John"
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label>Jabatan Kepengurusan*</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="nik"
-                      placeholder="ex. Ketua"
-                    />
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className="container bg-angger">
-            <div className="row justify-content-center">
-              <div className="col-md-8 col-12">
-                <div className="mb-3">
-                  <label htmlFor="jenis_kelamin">
-                    Apakah pernah Belajar dan Mengaji di Pondok Pesantren?
-                  </label>
-                  <br />
-                  <input
-                    type="radio"
-                    id="iya-pernah"
-                    name="iya-pernah"
-                    defaultValue="iya-pernah"
-                  />
-                  <label htmlFor="laki_laki"> Iya Pernah</label>
-                  <br />
-                  <input
-                    type="radio"
-                    id="tidak-pernah"
-                    name="tidak-pernah"
-                    defaultValue="tidak-pernah"
-                  />
-                  <label htmlFor="tidak-pernah"> Tidak Pernah</label>
-                </div>
               </div>
             </div>
           </div>
