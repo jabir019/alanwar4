@@ -42,7 +42,7 @@ export default function SectionProfil() {
               delectus est impedit aspernatur ad neque?
             </p>
           </div>
-          <div className="col-md-4 col-12 bg-secondary-subtle d-flex flex-column ">
+          <div className="col-md-4 col-12 bg-secondary-subtle d-flex flex-column mb-3 ">
             <h2>Visi</h2>
             <p>
               Mewujudkan Santri yang Berakhlakul Karimah, Religius, dan
