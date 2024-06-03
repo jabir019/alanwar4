@@ -6,7 +6,7 @@ import elips3 from "../assets/elips3.png";
 export default function Footer() {
   return (
     <>
-      <footer className="section-hero mt-5">
+      <footer className="position-relative py-5 mt-auto mb-0">
         <div className="container h-100">
           <div className="row  h-100 align-items-center justify-items-end">
             <div className="col-12 col-md-8">
@@ -46,13 +46,12 @@ export default function Footer() {
           className="object-fit-cover bg img-bg "
           alt="anakhormat"
         />
-
-        <div className="bg-primary text-center m-0 ">
-          <div className="container">
-            <p className="text-white py-2">Copyright ©️ 2024 by Jabir</p>
-          </div>
-        </div>
       </footer>
+      <div className="bg-primary text-center m-0 ">
+        <div className="container">
+          <p className="text-white py-2">Copyright ©️ 2024 by Jabir</p>
+        </div>
+      </div>
     </>
   );
 }
