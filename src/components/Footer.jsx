@@ -51,7 +51,7 @@ export default function Footer() {
       </footer>
       <div className="bg-primary text-center mb-0 ">
         <div className="container">
-          <p className="text-white py-2">Copyright ©️ 2024 by Jabir</p>
+          <p className="text-white py-2 mb-0">Copyright ©️ 2024 by Jabir</p>
         </div>
       </div>
     </>
