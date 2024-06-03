@@ -3,9 +3,9 @@ import CardProgram from "../components/CardProgram";
 
 export default function SectionProgram() {
   return (
-    <section>
-      <div className="container ">
-        <div className="row bg-angger h-100">
+    <section className="bg-angger">
+      <div className="container py-5">
+        <div className="row h-100">
           <div className="col-md-4 col-12">
             <div className="d-flex flex-column h-100 text-primary">
               <h1>Program Unggulan Pondok Pesantren Al-Anwar IV</h1>

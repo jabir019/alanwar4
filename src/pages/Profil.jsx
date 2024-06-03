@@ -10,7 +10,11 @@ export default function Profil() {
           <div className="container">
             {/* bacground & overlay */}
             <div className="bg overlay-bg"></div>
-            <img src={Profil1} className="bg img-bg" alt="profil1" />
+            <img
+              src={Profil1}
+              className="object-fit-cover bg img-bg"
+              alt="profil1"
+            />
 
             <div className="row h-100 align-items-center justify-item-center ">
               <div className="col-md-6 col-12 text-white align-self-center mt-5 ">

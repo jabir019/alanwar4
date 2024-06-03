@@ -8,7 +8,7 @@ export default function SectionKegiatan() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("https://web.abdulhaxor.my.id/wp-json/wp/v2/posts?_embed")
+    fetch("https://jabir.neuversity.site/wp-json/wp/v2/posts?_embed")
       .then((response) => response.json())
       .then((data) => setPosts(data));
   }, []);

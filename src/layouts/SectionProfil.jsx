@@ -16,7 +16,7 @@ export default function SectionProfil() {
       </section>
       <section className="container">
         <div className="row">
-          <div className="col-8">
+          <div className="col-md-8 col-12">
             <h1 className="text-primary mb-5">
               Profil Pondok Pesantren Al-Anwar IV Sarang, Rembang, Jawa Tengah.
             </h1>
@@ -42,7 +42,7 @@ export default function SectionProfil() {
               delectus est impedit aspernatur ad neque?
             </p>
           </div>
-          <div className="col-4 bg-secondary-subtle ">
+          <div className="col-md-4 col-12 bg-secondary-subtle ">
             <h2>Visi</h2>
             <p>
               Mewujudkan Santri yang Berakhlakul Karimah, Religius, dan
@@ -58,9 +58,9 @@ export default function SectionProfil() {
               Menanamkan keilmuan yang berlandaskan Al-Quran dan kutubussalaf.
             </p>
           </div>
-          <div className="col-12">
+          <div className="col-md-4 col-12">
             <div className="d-flex py-1 justify-content-end">
-              <button className=" py-0 bg-primary text-white ">
+              <button className="btn btn-primary py-0 text-white ">
                 DOWNLOAD BROSUR
               </button>
             </div>
