@@ -4,11 +4,13 @@ import Footer from "../components/Footer";
 export default function MainLayout(props) {
   return (
     <>
-      <Navbar />
+      <div className="d-flex flex-column align-items-stretch">
+        <Navbar />
 
-      <main>{props.children}</main>
+        <main>{props.children}</main>
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 }
