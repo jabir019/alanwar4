@@ -6,7 +6,7 @@ export default function SectionQuote() {
       <section className="section-hero h-100 ">
         <div className="container">
           <div className="row align-items-center h-100 justify-content-center text-center mt-5 ">
-            <div className="col-8 text-white mt-5 ">
+            <div className="col-8 text-white mt-2 ">
               <h5>KH. Maimoen Zubair</h5>
               <h1 className="mt-3">
                 "Ojo mikir engko dadi opo. Sing penting saiki sinau sing

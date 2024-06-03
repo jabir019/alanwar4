@@ -19,7 +19,7 @@ export default function SectionKegiatan() {
   return (
     <>
       <section>
-        <div className="container py-5 text-primary ">
+        <div className="container text-center mt-5 py-2 text-primary ">
           <h3>Kegiatan Pondok</h3>
         </div>
         <div className="container h-100 ">
@@ -37,9 +37,11 @@ export default function SectionKegiatan() {
                     alt="kegiatan1"
                   />
                   <div className="card-body">
-                    <h5 className="card-title">{post.title.rendered}</h5>
+                    <h5 className="card-title card-blog-title ">
+                      {post.title.rendered}
+                    </h5>
                     <p
-                      className="card-text"
+                      className="card-blog-description card-text"
                       dangerouslySetInnerHTML={{
                         __html: post.excerpt.rendered,
                       }}
