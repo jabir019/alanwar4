@@ -114,7 +114,11 @@ Halo saya ingin mendaftar ke pondok,
                       id="nik"
                       placeholder="+628xx-xxxx-xxxx"
                     />
-                    <button type="submit" onClick={handleSubmit}>
+                    <button
+                      type="submit"
+                      onClick={handleSubmit}
+                      className="align-self-center btn btn-primary mt-3"
+                    >
                       Submit
                     </button>
                   </div>

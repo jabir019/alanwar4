@@ -23,7 +23,9 @@ export default function SectionSambutan() {
               nihil consequatur quod aspernatur facere odio sapiente quas
               accusamus et.
             </p>
-            <button className="bg-primary text-white">BACA SELENGKAPNYA</button>
+            <button className=" align-self-center bg-primary text-white mt-3">
+              BACA SELENGKAPNYA
+            </button>
           </div>
         </div>
       </section>
