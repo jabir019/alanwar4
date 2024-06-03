@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="container h-100">
           <div className="row h-100  align-items-center justify-items-center">
             <div className="col-12 col-md-8">
-              <h2 className="text-white text-start ">
+              <h2 className="text-white text-center ">
                 Mewujudkan santri yang berakhlakul karimah, religius dan
                 berwawasan intelektual.
               </h2>
