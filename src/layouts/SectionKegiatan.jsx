@@ -33,7 +33,7 @@ export default function SectionKegiatan() {
                         ? post._embedded["wp:featuredmedia"][0]["source_url"]
                         : "https://picsum.photos/100/100?"
                     }
-                    className="card-img-top"
+                    className="card-img-top card-blog-img"
                     alt="kegiatan1"
                   />
                   <div className="card-body">
