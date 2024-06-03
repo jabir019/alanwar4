@@ -42,7 +42,6 @@ export default function Footer() {
       <div className="bg-primary text-center mb-0 ">
         <div className="container">
           <p className="text-white py-2 mb-0">Copyright ©️ 2024 by Jabir</p>
-          <a href=""></a>
         </div>
       </div>
     </>
