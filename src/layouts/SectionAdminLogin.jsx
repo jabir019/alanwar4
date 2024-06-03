@@ -46,10 +46,10 @@ export default function SectionAdminLogin() {
   }
 
   return (
-    <section>
-      <div className="container my-5">
+    <section className="container">
+      <div className=" my-5 px-2">
         <div className="row justify-content-center">
-          <div className="col-8 bg-angger">
+          <div className="col-12 col-md-8 bg-angger">
             <form onSubmit={handleSubmit}>
               <h3 className="text-center text-primary py-2">
                 Al-Anwar 4 - Admin Login

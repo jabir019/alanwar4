@@ -25,33 +25,36 @@ export default function SectionProgram() {
           </div>
 
           <div className="col-md-4 col-12 mt-3 mt-md-0">
-            <CardProgram
-              judul="Tahfidz Alqur'an"
-              deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
-            />
-            <CardProgram
-              judul="Juz 'Amma"
-              deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
-            />
-            <CardProgram
-              judul="Kitab Kuning Bandongan"
-              deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam"
-            />
+            <div className="d-flex flex-column h-100">
+              <CardProgram
+                judul="Tahfidz Alqur'an"
+                deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
+              />
+              <CardProgram
+                judul="Juz 'Amma"
+                deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
+              />
+              <CardProgram
+                judul="Kitab Kuning Bandongan"
+                deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam"
+              />
+            </div>
           </div>
-
           <div className="col-md-4 col-12 mt-3 mt-md-0">
-            <CardProgram
-              judul="Metode Alqur'an Yanbu'a"
-              deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit"
-            />
-            <CardProgram
-              judul="Metode Nahwu Al-Asas"
-              deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
-            />
-            <CardProgram
-              judul="Sorogan Kutubus Salaf"
-              deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
-            />
+            <div className="d-flex flex-column h-100">
+              <CardProgram
+                judul="Metode Alqur'an Yanbu'a"
+                deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit"
+              />
+              <CardProgram
+                judul="Metode Nahwu Al-Asas"
+                deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
+              />
+              <CardProgram
+                judul="Sorogan Kutubus Salaf"
+                deskripsi="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae velit molestiae quam, eligendi eaque est maiores asperiores. Incidunt, saepe?"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -1,44 +1,31 @@
 import anakhormat from "../assets/anakhormat.png";
 import elips from "../assets/elips1.png";
-import elips2 from "../assets/elips2.png";
-import elips3 from "../assets/elips3.png";
 
 export default function Footer() {
   return (
     <>
-      <footer className="position-relative py-5 mt-auto mb-0">
-        <div className="container ">
-          <div className="row   align-items-center justify-items-end">
+      <footer
+        className="position-relative py-5 mt-auto mb-0"
+        style={{
+          height: "80vh",
+        }}
+      >
+        <div className="container h-100">
+          <div className="row h-100  align-items-center justify-items-center">
             <div className="col-12 col-md-8">
               <h2 className="text-white text-start ">
                 Mewujudkan santri yang berakhlakul karimah, religius dan
                 berwawasan intelektual.
               </h2>
             </div>
-            <div className="col-12 col-md-4  ">
-              <div className=" d-flex justify-content-center align-items-center position-relative">
-                <img
-                  className="position-absolute"
-                  width={150}
-                  height={150}
-                  src={elips3}
-                  alt=""
-                />
-                <img
-                  className="position-absolute"
-                  width={150}
-                  height={150}
-                  src={elips2}
-                  alt=""
-                />
-                <img
-                  className="position-absolute"
-                  width={50}
-                  height={50}
-                  src={elips}
-                  alt=""
-                />
-              </div>
+            <div className="col-12 col-md-4 d-flex justify-content-center align-items-center">
+              <a href="https://www.youtube.com/@alanwar4media806">
+                <div className="icon-cont">
+                  <div className="icon-cont2">
+                    <img className="d-flex" src={elips} alt="yusup" />
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
