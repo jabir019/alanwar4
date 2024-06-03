@@ -47,7 +47,7 @@ export default function SectionAdminLogin() {
 
   return (
     <section className="container">
-      <div className=" my-5 px-2">
+      <div className=" my-5 px-3">
         <div className="row justify-content-center">
           <div className="col-12 col-md-8 bg-angger">
             <form onSubmit={handleSubmit}>
