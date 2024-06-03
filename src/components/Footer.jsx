@@ -7,7 +7,7 @@ export default function Footer() {
       <footer
         className="position-relative py-5 mt-auto mb-0"
         style={{
-          height: "80vh",
+          height: "60vh",
         }}
       >
         <div className="container h-100">
@@ -42,6 +42,7 @@ export default function Footer() {
       <div className="bg-primary text-center mb-0 ">
         <div className="container">
           <p className="text-white py-2 mb-0">Copyright ©️ 2024 by Jabir</p>
+          <a href=""></a>
         </div>
       </div>
     </>
