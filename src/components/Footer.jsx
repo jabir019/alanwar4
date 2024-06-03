@@ -19,7 +19,10 @@ export default function Footer() {
               </h2>
             </div>
             <div className="col-12 col-md-4 d-flex justify-content-center align-items-center">
-              <a href="https://www.youtube.com/@alanwar4media806">
+              <a
+                href="https://www.youtube.com/@alanwar4media806"
+                target="_blank"
+              >
                 <div className="icon-cont">
                   <div className="icon-cont2">
                     <img className="d-flex" src={elips} alt="yusup" />
