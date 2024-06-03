@@ -16,7 +16,7 @@ export default function SectionHero() {
           />
 
           <div className="row">
-            <div className="col-md-6 col-12 text-white align-self-center">
+            <div className="col-md-6 col-12 mt-5 text-white align-self-center">
               <h5>Selamat datang di</h5>
               <h1>Pondok Pesantren Alanwar IV Sarang</h1>
               <p>

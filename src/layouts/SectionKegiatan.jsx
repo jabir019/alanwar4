@@ -38,7 +38,12 @@ export default function SectionKegiatan() {
                   />
                   <div className="card-body">
                     <h5 className="card-title">{post.title.rendered}</h5>
-                    <p className="card-text">{post.date}</p>
+                    <p
+                      className="card-text"
+                      dangerouslySetInnerHTML={{
+                        __html: post.excerpt.rendered,
+                      }}
+                    />
                     <Link to={`/posts/${post.id}`}>Lihat Kegiatan</Link>
                   </div>
                 </div>
