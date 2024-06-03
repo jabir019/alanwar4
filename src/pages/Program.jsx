@@ -1,4 +1,5 @@
 import MainLayout from "../layouts/MainLayout";
+import WNF from "../assets/coming.jpeg";
 
 export default function Program() {
   return (

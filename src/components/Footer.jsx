@@ -8,14 +8,14 @@ export default function Footer() {
     <>
       <footer className="section-hero mt-5">
         <div className="container h-100">
-          <div className="row  h-100 align-items-center justify-items-center">
-            <div className="col-6">
+          <div className="row  h-100 align-items-center justify-items-end">
+            <div className="col-12 col-md-8">
               <h2 className="text-white text-start ">
                 Mewujudkan santri yang berakhlakul karimah, religius dan
                 berwawasan intelektual.
               </h2>
             </div>
-            <div className="col-4 position-relative d-flex justify-content-center align-items-center ">
+            <div className="col-12 col-md-4 position-relative d-flex justify-content-center align-items-center ">
               <img
                 className="position-absolute"
                 width={150}

@@ -8,7 +8,7 @@ export default function SectionSambutan() {
           <div className="col-md-6 col-12">
             <img className="w-100" src={abi} alt="fotoabi" />
           </div>
-          <div className="col-md-6 col-12">
+          <div className="col-md-6 col-12 d-flex flex-column">
             <h4>KH. Taj Yasin Maimoen</h4>
             <h2>
               Sambutan Pengasuh Pondok Pesantren Al Anwar IV Sarang, Rembang,
@@ -23,7 +23,7 @@ export default function SectionSambutan() {
               nihil consequatur quod aspernatur facere odio sapiente quas
               accusamus et.
             </p>
-            <button className="btn btn-primary align-self-center text-white ">
+            <button className="btn btn-primary mt-auto text-white ">
               BACA SELENGKAPNYA
             </button>
           </div>

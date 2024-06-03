@@ -42,7 +42,7 @@ export default function SectionProfil() {
               delectus est impedit aspernatur ad neque?
             </p>
           </div>
-          <div className="col-md-4 col-12 bg-secondary-subtle ">
+          <div className="col-md-4 col-12 bg-secondary-subtle d-flex flex-column ">
             <h2>Visi</h2>
             <p>
               Mewujudkan Santri yang Berakhlakul Karimah, Religius, dan
@@ -57,13 +57,10 @@ export default function SectionProfil() {
             <p>
               Menanamkan keilmuan yang berlandaskan Al-Quran dan kutubussalaf.
             </p>
-          </div>
-          <div className="col-md-4 col-12">
-            <div className="d-flex py-1 justify-content-end">
-              <button className="btn btn-primary py-0 text-white ">
-                DOWNLOAD BROSUR
-              </button>
-            </div>
+
+            <button className="btn btn-primary mt-auto text-white ">
+              DOWNLOAD BROSUR
+            </button>
           </div>
         </div>
       </section>
