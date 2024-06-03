@@ -22,7 +22,7 @@ export default function SectionPosts() {
       {posts ? (
         <>
           <div
-            style={{ height: "40vh", width: "100%", objectFit: "cover" }}
+            style={{ height: "60vh", width: "100%", objectFit: "cover" }}
             className="bg-primary"
           >
             <img
