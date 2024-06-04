@@ -82,7 +82,7 @@ Halo saya ingin mendaftar ke pondok,
                     <label>NIK/Nomor KTP*</label>
                     <input
                       value={nik}
-                      onChange={(event) => setNIK(event.target.value)}
+                      onChange={(event) => setNik(event.target.value)}
                       type="number"
                       className="form-control"
                       id="nik"
