@@ -17,6 +17,7 @@ export default function SectionProgram() {
               <div>
                 <img
                   className="w-100 object-fit-cover img-program "
+                  // Membuat elemen img dengan src dari variabel kegiatan dan alt "kegiatan"
                   src={kegiatan}
                   alt="kegiatan"
                 />
@@ -25,6 +26,7 @@ export default function SectionProgram() {
           </div>
 
           <div className="col-md-4 col-12 mt-3 mt-md-0">
+            {/* Membuat elemen div dengan class "col-md-4 col-12 mt-3 mt-md-0" yang berfungsi sebagai kolom kedua */}
             <div className="d-flex flex-column h-100">
               <CardProgram
                 judul="Tahfidz Alqur'an"
