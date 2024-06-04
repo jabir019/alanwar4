@@ -64,7 +64,9 @@ export default function SectionKegiatan() {
                         // Mengambil deskripsi dari API WordPress
                       }}
                     />
-                    <Link to={`/posts/${post.id}`}>Lihat Kegiatan</Link>
+                    <Link className="btn btn-primary" to={`/posts/${post.id}`}>
+                      Lihat Kegiatan
+                    </Link>
                     {/* Mengarahkan ke halaman posts dengan id yang sesuai */}
                   </div>
                 </div>
